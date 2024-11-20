@@ -14,20 +14,20 @@
     }
 
     header {
-        background-color: #d9534f;
-        color: #333;
+        background-color: #0096c7;
+        color: #fff;
         text-align: center;
     }
 
     footer {
         background-color: #ccc;
-        color: #fff;
+        color: #333;
         padding: 20px;
         text-align: center;
     }
 
     nav {
-        background-color: #171717;
+        background-color: #0096c7;
         color: #fff;
         height: 50px;
         display: flex;
@@ -55,7 +55,7 @@
     }
 
     nav ul li a:hover {
-        background-color: #484848;
+        background-color: #32bbe8;
     }
 
     nav ul li.active a {
@@ -73,7 +73,7 @@
     <nav>
       <ul>
         {% if user.is_authenticated %}
-          <li>Ola, {{ user.username }}</li>
+          <li>Olá, {{ user.username }}</li>
           <li><a href="{% url 'new_car' %}">Cadastrar Carro</a></li>
         {% endif %}
         {% if not user.is_authenticated %}
@@ -96,7 +96,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2024 Acioli Motors</p>
+    <p>&copy; 2023 PycodeBR Multimarcas</p>
   </footer>
 </body>
 </html>

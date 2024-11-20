@@ -78,7 +78,7 @@
     }
 
     button[type="submit"] {
-        background-color: #484848;
+        background-color: #0096c7;
         color: #fff;
         border: none;
         padding: 10px 20px;
@@ -89,7 +89,7 @@
     }
 
     button[type="submit"]:hover {
-        background-color: #171717;
+        background-color: #108eb8;
     }
 
     a {
@@ -99,7 +99,7 @@
     }
 
     a:hover {
-      color: #484848;
+      color: #0096c7;
     }
   </style>
 
@@ -116,7 +116,7 @@
             {% if car.photo %}
               <img src="{{ car.photo.url }}" alt="{{ car.model }} - {{ car.brand }}">
             {% else %}
-              <p class="no-photo">Foto não disponivel</p>
+              <p class="no-photo">Foto não disponível</p>
             {% endif %}
             <h2>{{ car.brand }} {{ car.model }}</h2>
             <p>{{ car.factory_year }} - R$ {{ car.value }}</p>
